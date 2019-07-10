@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'',include('resources.urls')),
-    
+    url(r'^profile/', include('student_profile.urls')),
 ]
