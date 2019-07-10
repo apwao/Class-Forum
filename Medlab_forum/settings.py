@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'authenticate',
     'resources',
     'bootstrap3',
+    'tinymce',
+    'student_profile',
+    
     
 ]
 
