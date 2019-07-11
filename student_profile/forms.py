@@ -8,3 +8,9 @@ class ProfileForm(forms.ModelForm):
         model=Profile
         fields=('student_name','reg_no','course','year_of_study','about','avatar')
         
+class NewProfileForm(forms.ModelForm):
+    """
+    """
+    class Meta:
+        model=Profile
+        fields=('student_name','reg_no','course','year_of_study','about')
