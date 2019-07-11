@@ -22,11 +22,13 @@ class Resources(models.Model):
     Tutorial='Tutorial'
     Cat='Cat'
     Performance_results='Performance_results'
+    Reading_Assignment='Reading_Assignment'
     Task_choices=[
         (Assignment, 'Assignment'),
         (Tutorial, 'Tutorial'),
         (Cat, 'Cat'),
-        (Performance_results, 'Performance_results')
+        (Performance_results, 'Performance_results'),
+        (Reading_Assignment,'Reading_Assignment'),
     ]
     
     cover_image=models.ImageField(upload_to='cover_photos/')
@@ -54,3 +56,6 @@ class Resources(models.Model):
         """
         """
         self.delete()
+        
+    def __str__(self):
+        return self.project_title 
