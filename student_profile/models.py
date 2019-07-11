@@ -39,6 +39,9 @@ class Profile(models.Model):
         """
         """
         self.delete()
+        
+    def __str__(self):
+        return self.student_name
 
         
         
