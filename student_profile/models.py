@@ -7,10 +7,10 @@ class Profile(models.Model):
     """
     Profile class to enable a student create their student profile
     """
-    FRESHMAN='FR'
-    SOPHOMORE='SO'
-    JUNIOR='JR'
-    SENIOR='SR'
+    FRESHMAN='Freshman'
+    SOPHOMORE='Sophomore'
+    JUNIOR='Junior'
+    SENIOR='Senior'
     YEAR_OF_STUDY_CHOICES=[
         (FRESHMAN, 'Freshman'),
         (SOPHOMORE, 'Sophomore'),
